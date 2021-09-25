@@ -162,7 +162,6 @@ header.open img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   padding: 75px 0px 0px;
 }
 .banner .right {
@@ -732,6 +731,7 @@ footer .foot ul li a {
     align-items: center;
     justify-content: space-evenly;
     padding: 90px 0px 0px;
+    overflow: unset;
   }
   .banner .right {
     z-index: -1;
@@ -759,6 +759,7 @@ footer .foot ul li a {
   }
   .banner .banner-text a {
     font-size: 18px;
+    padding: 0.5rem 1em;
   }
   .banner .banner-img {
     width: 60%;
@@ -768,5 +769,33 @@ footer .foot ul li a {
   .banner .banner-img img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .about {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: unset;
+    margin: 40px 0px;
+  }
+  .about .about-text {
+    width: 45%;
+    margin: 0;
+    text-align: left;
+  }
+  .about .about-text h2 {
+    font-size: 25px;
+    text-align: left;
+  }
+  .about .about-text a {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+  .about .about-text p {
+    font-size: 14px;
+    margin: 10px 0px 20px;
+  }
+  .about .about-img {
+    width: 40%;
   }
 }/*# sourceMappingURL=style.css.map */
