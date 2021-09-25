@@ -765,6 +765,8 @@ footer .foot ul li a {
     width: 60%;
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 3;
   }
   .banner .banner-img img {
     -o-object-fit: cover;
@@ -777,6 +779,10 @@ footer .foot ul li a {
     align-items: center;
     overflow: unset;
     margin: 40px 0px;
+  }
+  .about .line {
+    z-index: 1;
+    height: 32%;
   }
   .about .about-text {
     width: 45%;

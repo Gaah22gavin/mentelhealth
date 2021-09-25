@@ -839,6 +839,8 @@ footer{
 			width: 60%;
 			margin: 0;
 			padding: 0;
+			position: relative;
+			z-index: 3;
 			img{
 				object-fit: cover;
 			}
@@ -853,6 +855,10 @@ footer{
 		align-items: center;
 		overflow: unset;
 		margin: 40px 0px;
+		.line{
+			z-index: 1;
+			height: 32%;
+		}
 		
 		.about-text{
 			width: 45%;
@@ -879,7 +885,13 @@ footer{
 
 	}
 	// end here
+
+	// education
+
+
+	// end here
 }
+
 // =============end here================
 
 
