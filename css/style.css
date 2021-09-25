@@ -206,12 +206,12 @@ header.open img {
 }
 .banner .banner-text a {
   padding: 0.7rem 1.5rem;
-  background-color: #0493A3;
   border-radius: 5px;
   font-size: 15px;
   font-family: "Gilroy-Regular";
   text-decoration: none;
   color: white;
+  background-color: #0493A3;
 }
 .banner .banner-img {
   margin: 30px 0px;
@@ -224,7 +224,6 @@ header.open img {
 .about {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   padding: 27px 0px;
   margin: 0px 0px 25px;
   position: relative;
@@ -248,7 +247,7 @@ header.open img {
   color: #27226B;
 }
 .about .about-text p {
-  font-family: "panton-medium";
+  font-family: "Gilroy-medium";
   font-size: 15px;
   line-height: 1.4;
   color: #0493A3;
@@ -256,36 +255,45 @@ header.open img {
 }
 .about .about-text a {
   padding: 0.7rem 1.5rem;
-  background-color: #0493A3;
   border-radius: 5px;
   font-size: 15px;
   font-family: "Gilroy-Regular";
   text-decoration: none;
   color: white;
+  background-color: #27226B;
 }
 .about .about-img {
   margin: 30px 0px 0px;
   padding: 0px 10px;
+  position: relative;
 }
-.about .about-img img {
+.about .about-img .ab-img {
   width: 100%;
   border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+.about .about-img .ring {
+  position: absolute;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  top: -18px;
 }
 
 .Education {
   margin: 20px 0px;
-  padding: 20px 0px;
-  background-color: lightgray;
+  padding: 20px 0px 30px;
 }
 .Education h2 {
   text-align: center;
   font-family: "Gilroy-Semibold";
   font-size: 24px;
   color: #27226B;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 .Education .tab {
-  background-color: lightgreen;
   display: flex;
   flex-direction: column;
 }
@@ -297,7 +305,6 @@ header.open img {
 .Education .tab .tab-button .tablink {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   color: #0493A3;
@@ -305,27 +312,214 @@ header.open img {
   outline: none;
   cursor: pointer;
   font-family: "Gilroy-Extrabold";
-  font-size: 17px;
+  font-size: 16px;
   width: 30%;
   background-color: transparent;
+  opacity: 0.7;
 }
-.Education .tab .tab-button .tablink #smile {
+.Education .tab .tab-button .tablink i {
   font-size: 22px;
-}
-.Education .tab .tab-button .tablink #down {
-  font-size: 22px;
-  color: red;
-  width: 20%;
 }
 .Education .tab .tab-button .tablink h3 {
-  margin: 10px 0px 10px;
+  margin: 10px 0px;
 }
-.Education .tab .tab-button .tablink:hover {
-  background-color: #777;
+.Education .tab .tab-button .tablink:nth-child(2) h3 {
+  margin: 20px 0px;
 }
-.Education .tab .tab-content .tabcontent {
-  color: black;
+.Education .tab .tab-button .tablink:focus {
+  opacity: 1;
+}
+.Education .tab .tab-button .tablink:active {
+  background-color: white;
+}
+.Education .tab .tab-contant {
+  padding: 0px 5px;
+}
+.Education .tab .tab-contant .tabcontent {
   display: none;
-  padding: 50px;
+  padding: 10px;
   text-align: center;
+  border-top: 2px solid #27226B;
+}
+.Education .tab .tab-contant .tabcontent p {
+  font-family: "Gilroy-medium";
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0493A3;
+  margin: 15px 0px 30px;
+}
+.Education .tab .tab-contant .tabcontent a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Gilroy-Regular";
+  text-decoration: none;
+  color: white;
+  border-radius: 0px;
+  background-color: #27226B;
+}
+
+.Our-Warm-Line {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0px;
+  margin: 0px 0px 25px;
+}
+.Our-Warm-Line .Our-Warm-text {
+  margin: 20px 0px;
+  padding: 0px 10px;
+  text-align: center;
+}
+.Our-Warm-Line .Our-Warm-text h2 {
+  text-align: center;
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  color: #27226B;
+}
+.Our-Warm-Line .Our-Warm-text p {
+  font-family: "Gilroy-medium";
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0493A3;
+  margin: 20px 0px 30px;
+}
+.Our-Warm-Line .Our-Warm-text a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Gilroy-Regular";
+  text-decoration: none;
+  color: white;
+  background-color: #27226B;
+}
+.Our-Warm-Line .Our-Warm-Line-img {
+  margin: 30px 0px 0px;
+  padding: 0px 10px;
+  position: relative;
+}
+.Our-Warm-Line .Our-Warm-Line-img .ab-img {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+.Our-Warm-Line .Our-Warm-Line-img .ring {
+  position: absolute;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  top: -18px;
+}
+
+.COVID {
+  padding: 27px 0px;
+  margin: 0px 0px 25px;
+}
+.COVID .COVID-con {
+  background-color: #27226B;
+  margin: 0px 10px;
+  padding: 10px 0px 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.COVID .COVID-con .COVID-text {
+  margin: 20px 0px;
+  padding: 0px 10px;
+  text-align: center;
+}
+.COVID .COVID-con .COVID-text h2 {
+  text-align: center;
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  color: #27226B;
+  color: white;
+}
+.COVID .COVID-con .COVID-text p {
+  font-family: "Gilroy-medium";
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0493A3;
+  margin: 20px 0px 30px;
+  color: white;
+}
+.COVID .COVID-con .COVID-text a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Gilroy-Regular";
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+.COVID .COVID-con .COVID-img {
+  margin: 30px 0px 0px;
+  padding: 0px 10px;
+  position: relative;
+}
+.COVID .COVID-con .COVID-img .covid-img {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.Fundraising {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.Fundraising .fund-img {
+  margin: 10px 0px;
+}
+.Fundraising .fund-img img {
+  width: 100%;
+}
+.Fundraising #fund-box {
+  position: relative;
+  box-sizing: border-box;
+}
+.Fundraising #fund-box .overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.33);
+}
+.Fundraising #fund-box .overlay .middle {
+  width: 100%;
+}
+.Fundraising #fund-box .overlay h2 {
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  color: #27226B;
+  color: white;
+}
+.Fundraising #fund-box .overlay p {
+  font-family: "Gilroy-medium";
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0493A3;
+  text-align: center;
+  color: white;
+  margin: 20px 0px;
+  padding: 0px 10px;
+}
+.Fundraising #fund-box .overlay a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Gilroy-Regular";
+  text-decoration: none;
+  color: white;
+  border-radius: 0px;
+  background-color: #0493A3;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

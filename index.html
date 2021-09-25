@@ -48,6 +48,7 @@
     <!--About-->
     <section class="about">
         <img src="./img/about-path.png" alt="" class="line">
+        
         <div class="about-text">
             <h2>About Mental Health SF</h2>
             <p>We fight stigma and discrimination in mental health across diverse communities and changed policy, perception, and people. As mental health continues to change, we aim to be at the forefront of the evolution.
@@ -56,7 +57,8 @@
         </div>
 
         <div class="about-img">
-            <img src="./img/about.png" alt="">
+            <img src="./img/about.png" alt="" class="ab-img">
+            <img src="./img/ring.png" alt="" class="ring">
         </div>
     </section>
     <!-- end here -->
@@ -67,7 +69,7 @@
         <h2>Education With MHASF</h2>
         <div class="tab">  
             <div class="tab-button">
-                <button class="tablink" onclick="openCity('Training', this, 'red')" id="defaultOpen">
+                <button class="tablink" onclick="openCity('Training', this, '')" id="defaultOpen">
                     <i class="fas fa-smile" id="smile"></i>
                     <h3>
                         Training Institute
@@ -76,12 +78,12 @@
                 </button>
 
 
-                <button class="tablink" onclick="openCity('Paris', this, 'green')">
+                <button class="tablink" onclick="openCity('PROPEL', this, '')">
                     <i class="fas fa-dollar-sign"></i>
                     <h3>PROPEL</h3>
                     <i class="fas fa-angle-down" id="down"></i>
                 </button>
-                <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">
+                <button class="tablink" onclick="openCity('TAMHS', this, '')">
                     <i class="fas fa-trophy"></i>
                     <h3>TAMHS Project</h3>
                     <i class="fas fa-angle-down" id="down"></i>
@@ -104,20 +106,32 @@
                     <a href="#">View Programs</a>
                   </div>
                   
-                  <!-- <div id="Paris" class="tabcontent">
-                    <h1>Paris</h1>
-                    <p>Paris is the capital of France.</p>
+                  <div id="PROPEL" class="tabcontent">
+                    <p>
+                        MHASF's Training Institute provides evidence-based trainings 
+                        designed to enhance skills and knowledge for professional 
+                        development within a cooperative learning environment. 
+                        We deliver engaging, interactive trainings and workshops 
+                        discussing an array of mental health topics for people of 
+                        any profession and level of familiarity.
+                    </p>
+
+                    <a href="#">View Programs</a>
                   </div>
                   
-                  <div id="Tokyo" class="tabcontent">
-                    <h1>Tokyo</h1>
-                    <p>Tokyo is the capital of Japan.</p>
+                  <div id="TAMHS" class="tabcontent">
+                    <p>
+                        MHASF's Training Institute provides evidence-based trainings 
+                        designed to enhance skills and knowledge for professional 
+                        development within a cooperative learning environment. 
+                        We deliver engaging, interactive trainings and workshops 
+                        discussing an array of mental health topics for people of 
+                        any profession and level of familiarity.
+                    </p>
+
+                    <a href="#">View Programs</a>
                   </div>
                   
-                  <div id="Oslo" class="tabcontent">
-                    <h1>Oslo</h1>
-                    <p>Oslo is the capital of Norway.</p>
-                  </div> -->
             </div>
 
         </div>
@@ -126,7 +140,7 @@
 
 
     <!-- OurWarmLine -->
-    <!-- <section class="Our-Warm-Line">
+    <section class="Our-Warm-Line">
 
         <div class="Our-Warm-text">
             <h2>About Mental Health SF</h2>
@@ -136,46 +150,71 @@
         </div>
 
         <div class="Our-Warm-Line-img">
-            <img src="./img/about.png" alt="">
+            <img src="./img/hot-line.png" alt="" class="ab-img">
+            <img src="./img/ring.png" alt="" class="ring">
         </div>
-    </section> -->
+    </section>
     <!-- end here -->
 
 
     <!-- COVID -->
-    <!-- <section class="COVID"> 
+    <section class="COVID"> 
+
         <div class="COVID-con">
-            <div class="Our-Warm-text">
-                <h2>About Mental Health SF</h2>
-                <p>We fight stigma and discrimination in mental health across diverse communities and changed policy, perception, and people. As mental health continues to change, we aim to be at the forefront of the evolution.
+            <div class="COVID-text">
+                <h2>WE ARE AVAILABLE 24/7 FOR COVID-19 SUPPORT</h2>
+                <p>
+                    MHASF is here for you. 
+                    Our combined efforts of self-quarantining will save 
+                    lives. While physical social distancing is recommended, 
+                    it does not mean we need to distance ourselves from
+                    one another emotionally and mentally. During this
+                    difficult period, we want to help and support by doing
+                    what we do best: peer-to-peer support, mental health
+                    information/referrals, and holistic wellness strategies.
                 </p>
                 <a href="#">Covid-19 Resources & Contacts</a>
             </div>
     
-            <div class="Our-Warm-Line-img">
-                <img src="./img/about.png" alt="">
+            <div class="COVID-img">
+                <img src="./img/covid.png" alt="" class="covid-img">
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- end here -->
 
 
     <!--Fundraising-->
-    <!-- <section class="Fundraising">
-        <div class="img">
-            <img src="" alt="">
+    <section class="Fundraising">
+
+
+        <div class="fund-img">
+            <img src="./img/second-first.png" alt="">
+            <img src="./img/first.png" alt="" class="first">
         </div>
 
 
-        <div class="img">
-            <img src="" alt="">
+        <div class="fund-img" id="fund-box">
+            <img src="./img/middle.png" alt="">
+            <div class="overlay">
+                <h2>Fundraising</h2>
+                <p>
+                    Corporate Donations, Peer to Peer Donations
+                    & GoFundMe Campaigns constitute
+                   the largest fraction of our fundraising. 
+                   Just to show our gratitude, here are the 
+                   largest donors from each of the groups 
+                </p>
+
+                <a href="#">View Donor Shoutouts</a>
+            </div>
         </div>
 
-        <div class="img">
-            <img src="" alt="">
+        <div class="fund-img">
+            <img src="./img/third.png" alt="" class="third">
         </div>
 
-    </section> -->
+    </section> 
     <!-- end here -->
 
     <!-- Join Our Team -->

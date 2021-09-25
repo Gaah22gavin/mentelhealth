@@ -51,7 +51,7 @@ $bold:"Gilroy-Bold";
 $regular:"Gilroy-Regular";
 $light: "Gilroy-light";
 $thin: "Panton-thin";
-$medium: "panton-medium";
+$medium: "Gilroy-medium";
 $semibold: "Gilroy-Semibold";
 $Extrabold: "Gilroy-Extrabold";
 
@@ -78,7 +78,6 @@ $color-main: #0493A3;
 
 @mixin btn {
     padding: 0.7rem 1.5rem;
-    background-color: #0493A3;
     border-radius: 5px;
     font-size: 15px;
     font-family: $regular;
@@ -255,6 +254,8 @@ header{
 
 		a{
 			@include btn;
+			background-color: #0493A3;
+
 		}	
 	}
 
@@ -272,7 +273,6 @@ header{
 .about{
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 	padding: 27px 0px;
 	margin: 0px 0px 25px;
 	position: relative;
@@ -298,36 +298,47 @@ header{
 		}
 		a{
 			@include btn;
+			background-color: $bg_color;
+
 		}	
 	}
 
 	.about-img{
 		margin: 30px 0px 0px;
 		padding: 0px 10px;
-		img{
-			width: 100%;
+		position: relative;
+		.ab-img{
+			width:100%;
 			border-radius: 5px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.ring{
+			position: absolute;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			z-index: 0;
+			top: -18px;
+
 		}
 	}
 }
 // end here
 
-// 
 
-
-
+//Education
 .Education{
 	margin: 20px 0px;
-	padding: 20px 0px;
-	background-color: lightgray;
+	padding: 20px 0px 30px;
 	h2{
 		text-align: center;
 		@include font-type(heading);
-		margin: 20px 0px;
+		margin: 30px 0px;
 	}
 
 	.tab{
-		background-color: lightgreen;
 		display: flex;
 		flex-direction: column;
 
@@ -339,7 +350,6 @@ header{
 			.tablink {
 				display: flex;
 				flex-direction: column;
-				flex-wrap: wrap;
 				align-items: center;
 				justify-content: center;
 				color: $color-main;
@@ -347,36 +357,52 @@ header{
 				outline: none;
 				cursor: pointer;
 				font-family: $Extrabold;
-				font-size: 17px;
+				font-size: 16px;
 				width: 30%;
 				background-color: transparent;
+				opacity: .7;
 
-				#smile{
+				i{
 					font-size: 22px;
-				}
-
-				#down{
-					font-size: 22px;
-					color: red;		
-					width: 20%;		
 				}
 				h3{
-					margin: 10px 0px 10px;
+					margin: 10px 0px ;
+				}
+
+				&:nth-child(2){
+					h3{
+						margin: 20px 0px;
+					}
 				}
 			  }
 			  
-			  .tablink:hover {
-				background-color: #777;
+			  .tablink:focus{
+				opacity: 1;
 			  }
+
+			  .tablink:active{
+				background-color: white;
+			  }
+			  
 		}
 
-		.tab-content{
-
+		.tab-contant{
+			padding: 0px 5px;
 			.tabcontent {
-				color: rgb(0, 0, 0);
 				display: none;
-				padding: 50px;
+				padding: 10px;
 				text-align: center;
+				border-top: 2px solid $bg_color;
+				p{
+					@include font-type(paragraph);
+					margin: 15px 0px 30px;
+				}
+
+				a{
+					@include btn;
+					border-radius: 0px;
+					background-color: $bg_color;
+				}
 			}
 			
 		}
@@ -392,6 +418,165 @@ header{
 
 
 }
+// end here
 
 
+// Our-Warm-Line
+.Our-Warm-Line{
+	display: flex;
+	flex-direction: column;
+	padding: 27px 0px;
+	margin: 0px 0px 25px;
+	.Our-Warm-text{
+		margin: 20px 0px;
+		padding: 0px 10px;
+		text-align: center;
+		h2{
+			text-align: center;
+			@include font-type(heading);
+		}
+
+		p{
+			@include font-type(paragraph);
+			margin: 20px 0px 30px;
+		}
+		a{
+			@include btn;
+			background-color: $bg_color;
+
+		}	
+	}
+
+	.Our-Warm-Line-img{
+		margin: 30px 0px 0px;
+		padding: 0px 10px;
+		position: relative;
+		.ab-img{
+			width:100%;
+			border-radius: 5px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.ring{
+			position: absolute;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			z-index: 0;
+			top: -18px;
+
+		}
+	}
+
+}
+// end here
+
+// COVID
+.COVID{
+	padding: 27px 0px;
+	margin: 0px 0px 25px;
+	
+	.COVID-con{
+		background-color: $bg_color;
+		margin: 0px 10px;
+		padding: 10px 0px 30px;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+	.COVID-text{
+		margin: 20px 0px;
+		padding: 0px 10px;
+		text-align: center;
+		h2{
+			text-align: center;
+			@include font-type(heading);
+			color: white
+		}
+
+		p{
+			@include font-type(paragraph);
+			margin: 20px 0px 30px;
+			color: white
+		}
+		a{
+			@include btn;
+			background-color: transparent;
+			border: 2px solid white;
+
+		}	
+	}
+
+	.COVID-img{
+		margin: 30px 0px 0px;
+		padding: 0px 10px;
+		position: relative;
+		.covid-img{
+			width:100%;
+			border-radius: 5px;
+			position: relative;
+			z-index: 1;
+		}
+
+		}
+	}
+}
+// end here
+
+//Fundraising
+.Fundraising{
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	.fund-img{
+		margin: 10px 0px;
+		img{
+			width: 100%;
+		}
+	}
+
+	#fund-box{
+		position: relative;
+		box-sizing: border-box;
+
+		.overlay{
+			position: absolute;
+			display: flex;
+			flex-direction:column;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.33);
+			.middle{
+				width: 100%;
+			}
+
+			h2{
+				@include font-type(heading);
+				color: white;
+			}
+
+			p{
+				@include font-type(paragraph);
+				text-align: center;
+				color: white;
+				margin: 20px 0px;
+				padding: 0px 10px;
+			}
+	
+			a{
+				@include btn;
+				border-radius: 0px;
+				background-color: $color-main;
+				color: white;
+			}
+	
+		}
+
+	}
+
+}
 // end here
