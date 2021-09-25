@@ -108,8 +108,11 @@ header .menu.line-open .line::after {
 }
 header.open {
   height: 100vh;
+  width: 100%;
   background-color: #313131;
   padding: 0;
+  margin: 0;
+  z-index: 5;
 }
 header.open ul {
   display: flex;
@@ -285,6 +288,8 @@ header.open img {
 .Education {
   margin: 20px 0px;
   padding: 20px 0px 30px;
+  background: url(../img/education.png);
+  background-position: center;
 }
 .Education h2 {
   text-align: center;
@@ -307,7 +312,6 @@ header.open img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #0493A3;
   border: none;
   outline: none;
   cursor: pointer;
@@ -315,7 +319,7 @@ header.open img {
   font-size: 16px;
   width: 30%;
   background-color: transparent;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .Education .tab .tab-button .tablink i {
   font-size: 22px;
@@ -328,6 +332,7 @@ header.open img {
 }
 .Education .tab .tab-button .tablink:focus {
   opacity: 1;
+  color: #0493A3;
 }
 .Education .tab .tab-button .tablink:active {
   background-color: white;
@@ -339,7 +344,7 @@ header.open img {
   display: none;
   padding: 10px;
   text-align: center;
-  border-top: 2px solid #27226B;
+  border-top: 4px solid #27226B;
 }
 .Education .tab .tab-contant .tabcontent p {
   font-family: "Gilroy-medium";
@@ -453,6 +458,7 @@ header.open img {
   color: white;
   background-color: transparent;
   border: 2px solid white;
+  border-radius: 0px;
 }
 .COVID .COVID-con .COVID-img {
   margin: 30px 0px 0px;
@@ -473,6 +479,10 @@ header.open img {
 }
 .Fundraising .fund-img {
   margin: 10px 0px;
+  width: 90%;
+  height: 45%;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 .Fundraising .fund-img img {
   width: 100%;
@@ -480,8 +490,10 @@ header.open img {
 .Fundraising #fund-box {
   position: relative;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 .Fundraising #fund-box .overlay {
+  border-radius: 5px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -490,7 +502,7 @@ header.open img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 98%;
   background-color: rgba(0, 0, 0, 0.33);
 }
 .Fundraising #fund-box .overlay .middle {
@@ -510,7 +522,7 @@ header.open img {
   text-align: center;
   color: white;
   margin: 20px 0px;
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 .Fundraising #fund-box .overlay a {
   padding: 0.7rem 1.5rem;
@@ -522,4 +534,167 @@ header.open img {
   border-radius: 0px;
   background-color: #0493A3;
   color: white;
+}
+
+.Join-Our-Team {
+  padding: 20px 0px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+}
+.Join-Our-Team .join-text {
+  margin: 0px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.Join-Our-Team .join-text .join-box {
+  background-color: #0493A3;
+  border-radius: 10px;
+  margin: 20px 0px;
+  padding: 40px 30px;
+}
+.Join-Our-Team .join-text .join-box h2 {
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  color: #27226B;
+  color: white;
+}
+.Join-Our-Team .join-text .join-box p {
+  font-family: "Gilroy-medium";
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0493A3;
+  margin: 10px 0px 20px;
+  color: white;
+}
+.Join-Our-Team .join-text .join-box a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Gilroy-Regular";
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0px;
+  color: white;
+}
+.Join-Our-Team .join-text #box-two {
+  background-color: #27226B;
+  border-radius: 10px;
+}
+.Join-Our-Team .Advocate {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+.Join-Our-Team .Advocate .Adcovate-text {
+  text-align: center;
+  background-color: #27226B;
+  border-radius: 10px;
+  margin: 10px 0px;
+  padding: 40px 30px;
+}
+.Join-Our-Team .Advocate .Adcovate-text h2 {
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  color: #27226B;
+  color: white;
+}
+.Join-Our-Team .Advocate .Adcovate-text p {
+  font-family: "Gilroy-medium";
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0493A3;
+  margin: 10px 0px 20px;
+  color: white;
+}
+.Join-Our-Team .Advocate .Adcovate-text a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Gilroy-Regular";
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0px;
+  color: white;
+}
+.Join-Our-Team .Advocate .Adcovate-text img {
+  width: 100%;
+}
+.Join-Our-Team .Advocate #advocate-img {
+  padding: 0;
+  background-color: transparent;
+}
+.Join-Our-Team .Advocate #Volunteer {
+  background-color: #0493A3;
+}
+
+footer {
+  text-align: center;
+  background-color: #efefef;
+  padding: 40px 0px 0px;
+}
+footer h2 {
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  color: #27226B;
+  margin: 20px 0px 0px;
+}
+footer form {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer form .email {
+  padding: 17px 20px 17px 20px;
+  margin: 20px 0px;
+  width: 80%;
+  font-family: "Gilroy-LightItalic";
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+footer form .email::-moz-placeholder {
+  text-align: center;
+}
+footer form .email:-ms-input-placeholder {
+  text-align: center;
+}
+footer form .email::placeholder {
+  text-align: center;
+}
+footer form #button {
+  width: 93%;
+  padding: 13px 0px;
+  font-family: "Gilroy-Regular";
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #27226B;
+  color: white;
+  outline: none;
+  border: none;
+}
+footer .foot {
+  color: #27226B;
+}
+footer .foot ul {
+  margin: 40px 0px;
+}
+footer .foot ul h3 {
+  font-family: "Gilroy-Extrabold";
+  font-size: 24px;
+}
+footer .foot ul li {
+  margin: 15px 0px;
+}
+footer .foot ul li a {
+  text-decoration: none;
+  font-family: "Gilroy-Regular";
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

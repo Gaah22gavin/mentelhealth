@@ -86,3 +86,16 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'Gilroy-LightItalic';
+    src: url('Gilroy-LightItalic.eot');
+    src: local('Gilroy LightItalic'), local('Gilroy-LightItalic'),
+        url('Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-LightItalic.woff2') format('woff2'),
+        url('Gilroy-LightItalic.woff') format('woff'),
+        url('Gilroy-LightItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
