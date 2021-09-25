@@ -1,0 +1,355 @@
+
+// ===================reseets========================
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// =========================================
+
+// ==============fonts======================
+
+$bold:"Gilroy-Bold";
+$regular:"Gilroy-Regular";
+$light: "Gilroy-light";
+$thin: "Panton-thin";
+$medium: "panton-medium";
+$semibold: "Gilroy-Semibold";
+$Extrabold: "Gilroy-Extrabold";
+
+// =================end=====================
+
+$bg_color:#27226B;
+$color-main: #0493A3;
+
+// =========================================        
+
+@mixin font-type($font-name){
+	@if ($font-name == paragraph) {
+		font-family: $medium;
+		font-size: 15px;
+		line-height: 1.4;
+		color:$color-main;
+	}@else if($font-name == heading){
+		font-family: $semibold;
+		font-size: 24px;
+		color:$bg_color;
+	}
+	
+}
+
+@mixin btn {
+    padding: 0.7rem 1.5rem;
+    background-color: #0493A3;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: $regular;
+    text-decoration: none;
+    color: white;
+}
+
+// =========mixins==============
+
+
+// header
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 12vh;
+	padding: 0px 20px;
+	box-sizing: border-box;
+	z-index: 5;
+
+	ul{
+		display: none;
+	}
+
+
+	img{
+		width: 30%;
+	}
+
+	.menu{
+		width: 18%;
+		cursor: pointer;
+		position: relative;
+		.line{
+			background-color: white;
+			width: 100%;
+			height: 6px;
+			border-radius: 5px;
+			transition: all .3s ease-in-out;
+			&::before{
+				content: "";
+				background-color: rgb(255, 255, 255);
+				width: 100%;
+				height: 6px;
+				position: absolute;
+				transform: translateY(-16px);
+				border-radius: 5px;
+				transition: all .3s ease-in-out;
+			}
+
+			&::after{
+				content: "";
+				background-color: rgb(255, 255, 255);
+				width: 100%;
+				height: 6px;
+				position: absolute;
+				transform: translateY(16px);
+				border-radius: 5px;
+				transition: all .3s ease-in-out;
+			}
+		}
+
+		&.line-open{
+			.line{
+                background-color:transparent;
+                &::before{
+                    transform: rotate(45deg);
+                }
+
+                &::after{
+                    transform: rotate(-45deg);
+                }
+            }
+		}
+	}
+
+	&.open{
+		height: 100vh;
+		background-color: rgb(49, 49, 49);
+		padding: 0;
+		ul{
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+			animation: ul .3s ease-in-out .2s;
+			li{
+				padding: 20px 0px;
+				margin: 10px 0px;
+				a{
+					font-size: 22px;
+					color: white;
+					text-decoration: none;
+					font-family:$light;
+				}
+			}
+			.second{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.Contact{
+					font-size:16px;
+					padding: 0px 10px;
+				}
+			}
+		}
+		.menu{
+			width: 14%;
+			position:absolute;
+			top: 7%;
+			right: 4%;
+		}
+		img{
+			position:absolute;
+			top: 3%;
+			left: 5%;
+		}
+
+		@keyframes ul {
+			0%{
+				height: 0%;
+			}
+
+			100%{
+				height: 100%;
+			}
+		}
+	}
+}
+// end here
+
+// banner
+.banner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	padding: 75px 0px 0px;
+	.right{
+		top: -32px;
+		left: -2px;
+		width: 52%;
+		position: absolute;
+		z-index: 0;
+	}
+	.left{
+		z-index: 0;
+		top: -7px;
+		right: -3px;
+		width: 46%;
+		position: absolute;
+	}
+
+	.banner-text{
+		text-align: center;
+		margin: 21px 0px 10px;
+		h1{
+			font-family: $regular;
+			font-size: 30px;
+			line-height: 1.2;
+		}
+
+		p{
+			font-family: $semibold;
+			font-size: 14px;
+			margin: 5px 5px 35px;
+			line-height: 1.4;
+		}
+
+		a{
+			@include btn;
+		}	
+	}
+
+	.banner-img{
+		margin: 30px 0px;
+		padding: 0px 10px;
+		img{
+			width: 100%;
+		}
+	}
+}
+// end here
+
+// About
+.about{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 27px 0px;
+	margin: 0px 0px 25px;
+	position: relative;
+	.line{
+		width: 100%;
+		height: 22%;
+		position: absolute;
+		top: -40px;
+		z-index: -1;
+	}
+	.about-text{
+		margin: 20px 0px;
+		padding: 0px 10px;
+		text-align: center;
+		h2{
+			text-align: center;
+			@include font-type(heading);
+		}
+
+		p{
+			@include font-type(paragraph);
+			margin: 20px 0px 30px;
+		}
+		a{
+			@include btn;
+		}	
+	}
+
+	.about-img{
+		margin: 30px 0px 0px;
+		padding: 0px 10px;
+		img{
+			width: 100%;
+			border-radius: 5px;
+		}
+	}
+}
+// end here
+
+// 
+
+
+
+.Education{
+	
+	.tablink {
+		background-color: #555;
+		color: white;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: 25%;
+	  }
+	  
+	  /* Change background color of buttons on hover */
+	  .tablink:hover {
+		background-color: #777;
+	  }
+	  
+	  /* Set default styles for tab content */
+	  .tabcontent {
+		color: white;
+		display: none;
+		padding: 50px;
+		text-align: center;
+	  }
+	  
+	  /* Style each tab content individually */
+	  #London {background-color:red;}
+	  #Paris {background-color:green;}
+	  #Tokyo {background-color:blue;}
+	  #Oslo {background-color:orange;}
+
+}
+
+
+// end here

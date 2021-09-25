@@ -1,0 +1,311 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.4;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 12vh;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+header ul {
+  display: none;
+}
+header img {
+  width: 30%;
+}
+header .menu {
+  width: 18%;
+  cursor: pointer;
+  position: relative;
+}
+header .menu .line {
+  background-color: white;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+header .menu .line::before {
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  transform: translateY(-16px);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+header .menu .line::after {
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  transform: translateY(16px);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+header .menu.line-open .line {
+  background-color: transparent;
+}
+header .menu.line-open .line::before {
+  transform: rotate(45deg);
+}
+header .menu.line-open .line::after {
+  transform: rotate(-45deg);
+}
+header.open {
+  height: 100vh;
+  background-color: #313131;
+  padding: 0;
+}
+header.open ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: ul 0.3s ease-in-out 0.2s;
+          animation: ul 0.3s ease-in-out 0.2s;
+}
+header.open ul li {
+  padding: 20px 0px;
+  margin: 10px 0px;
+}
+header.open ul li a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  font-family: "Gilroy-light";
+}
+header.open ul .second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header.open ul .second .Contact {
+  font-size: 16px;
+  padding: 0px 10px;
+}
+header.open .menu {
+  width: 14%;
+  position: absolute;
+  top: 7%;
+  right: 4%;
+}
+header.open img {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+}
+@-webkit-keyframes ul {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes ul {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 75px 0px 0px;
+}
+.banner .right {
+  top: -32px;
+  left: -2px;
+  width: 52%;
+  position: absolute;
+  z-index: 0;
+}
+.banner .left {
+  z-index: 0;
+  top: -7px;
+  right: -3px;
+  width: 46%;
+  position: absolute;
+}
+.banner .banner-text {
+  text-align: center;
+  margin: 21px 0px 10px;
+}
+.banner .banner-text h1 {
+  font-family: "Gilroy-Regular";
+  font-size: 30px;
+  line-height: 1.2;
+}
+.banner .banner-text p {
+  font-family: "Gilroy-Semibold";
+  font-size: 14px;
+  margin: 5px 5px 35px;
+  line-height: 1.4;
+}
+.banner .banner-text a {
+  padding: 0.7rem 1.5rem;
+  background-color: #0493A3;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Gilroy-Regular";
+  text-decoration: none;
+  color: white;
+}
+.banner .banner-img {
+  margin: 30px 0px;
+  padding: 0px 10px;
+}
+.banner .banner-img img {
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 27px 0px;
+  margin: 0px 0px 25px;
+  position: relative;
+}
+.about .line {
+  width: 100%;
+  height: 22%;
+  position: absolute;
+  top: -40px;
+  z-index: -1;
+}
+.about .about-text {
+  margin: 20px 0px;
+  padding: 0px 10px;
+  text-align: center;
+}
+.about .about-text h2 {
+  text-align: center;
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  color: #27226B;
+}
+.about .about-text p {
+  font-family: "panton-medium";
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0493A3;
+  margin: 20px 0px 30px;
+}
+.about .about-text a {
+  padding: 0.7rem 1.5rem;
+  background-color: #0493A3;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Gilroy-Regular";
+  text-decoration: none;
+  color: white;
+}
+.about .about-img {
+  margin: 30px 0px 0px;
+  padding: 0px 10px;
+}
+.about .about-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Education {
+  /* Change background color of buttons on hover */
+  /* Set default styles for tab content */
+  /* Style each tab content individually */
+}
+.Education .tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.Education .tablink:hover {
+  background-color: #777;
+}
+.Education .tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+.Education #London {
+  background-color: red;
+}
+.Education #Paris {
+  background-color: green;
+}
+.Education #Tokyo {
+  background-color: blue;
+}
+.Education #Oslo {
+  background-color: orange;
+}/*# sourceMappingURL=style.css.map */
