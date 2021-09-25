@@ -61,6 +61,32 @@ header {
 }
 header ul {
   display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: ul 0.3s ease-in-out 0.2s;
+          animation: ul 0.3s ease-in-out 0.2s;
+}
+header ul li {
+  padding: 20px 0px;
+  margin: 10px 0px;
+}
+header ul li a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  font-family: "Gilroy-light";
+}
+header ul .second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header ul .second .Contact {
+  font-size: 16px;
+  padding: 0px 10px;
 }
 header img {
   width: 30%;
@@ -419,7 +445,7 @@ header.open img {
 
 .COVID {
   padding: 27px 0px;
-  margin: 0px 0px 25px;
+  margin: 0px 0px 52px;
 }
 .COVID .COVID-con {
   background-color: #27226B;
@@ -478,19 +504,25 @@ header.open img {
   flex-wrap: wrap;
 }
 .Fundraising .fund-img {
-  margin: 10px 0px;
-  width: 90%;
+  margin: 20px 0px;
+  width: 95%;
   height: 45%;
-  border-radius: 5px;
   margin: 0 auto;
 }
 .Fundraising .fund-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.Fundraising .fund-img .first {
+  height: 40vh;
   width: 100%;
 }
 .Fundraising #fund-box {
   position: relative;
   box-sizing: border-box;
   border-radius: 5px;
+  margin: 20px auto;
+  width: 95%;
 }
 .Fundraising #fund-box .overlay {
   border-radius: 5px;
@@ -503,7 +535,7 @@ header.open img {
   left: 0;
   width: 100%;
   height: 98%;
-  background-color: rgba(0, 0, 0, 0.33);
+  background-color: rgba(0, 0, 0, 0.44);
 }
 .Fundraising #fund-box .overlay .middle {
   width: 100%;
@@ -534,6 +566,14 @@ header.open img {
   border-radius: 0px;
   background-color: #0493A3;
   color: white;
+}
+.Fundraising #third {
+  height: 40vh;
+}
+.Fundraising #third .third-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Join-Our-Team {
@@ -594,6 +634,7 @@ header.open img {
   text-align: center;
   background-color: #27226B;
   border-radius: 10px;
+  border: 2px solid white;
   margin: 10px 0px;
   padding: 40px 30px;
 }
