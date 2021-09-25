@@ -102,6 +102,7 @@ header .menu .line {
   height: 6px;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
 }
 header .menu .line::before {
   content: "";
@@ -112,6 +113,7 @@ header .menu .line::before {
   transform: translateY(-16px);
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
 }
 header .menu .line::after {
   content: "";
@@ -122,6 +124,7 @@ header .menu .line::after {
   transform: translateY(16px);
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
 }
 header .menu.line-open .line {
   background-color: transparent;
@@ -142,32 +145,6 @@ header.open {
 }
 header.open ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: ul 0.3s ease-in-out 0.2s;
-          animation: ul 0.3s ease-in-out 0.2s;
-}
-header.open ul li {
-  padding: 20px 0px;
-  margin: 10px 0px;
-}
-header.open ul li a {
-  font-size: 22px;
-  color: white;
-  text-decoration: none;
-  font-family: "Gilroy-light";
-}
-header.open ul .second {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-header.open ul .second .Contact {
-  font-size: 16px;
-  padding: 0px 10px;
 }
 header.open .menu {
   width: 14%;
@@ -179,22 +156,6 @@ header.open img {
   position: absolute;
   top: 3%;
   left: 5%;
-}
-@-webkit-keyframes ul {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 100%;
-  }
-}
-@keyframes ul {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 100%;
-  }
 }
 
 .banner {
@@ -738,4 +699,74 @@ footer .foot ul li a {
   text-decoration: none;
   font-family: "Gilroy-Regular";
   font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 10vh;
+  }
+  header img {
+    width: 25%;
+  }
+  header ul li a {
+    font-size: 40px;
+  }
+  header .menu {
+    width: 9%;
+  }
+  header .menu .line {
+    height: 8px;
+  }
+  header .menu .line::before {
+    height: 8px;
+  }
+  header .menu .line::after {
+    height: 8px;
+  }
+  header.open .menu {
+    width: 9%;
+  }
+
+  .banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 90px 0px 0px;
+  }
+  .banner .right {
+    z-index: -1;
+    top: -33px;
+    left: -71px;
+    width: 60%;
+  }
+  .banner .left {
+    z-index: -1;
+  }
+  .banner .banner-text {
+    width: 30%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .banner .banner-text h1 {
+    color: white;
+    margin: 0px 0px 30px;
+    font-size: 42px;
+  }
+  .banner .banner-text p {
+    margin: 0px 0px 35px;
+    font-size: 18px;
+  }
+  .banner .banner-text a {
+    font-size: 18px;
+  }
+  .banner .banner-img {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+  }
+  .banner .banner-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
