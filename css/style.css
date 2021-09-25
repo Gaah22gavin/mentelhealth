@@ -273,39 +273,59 @@ header.open img {
 }
 
 .Education {
-  /* Change background color of buttons on hover */
-  /* Set default styles for tab content */
-  /* Style each tab content individually */
+  margin: 20px 0px;
+  padding: 20px 0px;
+  background-color: lightgray;
 }
-.Education .tablink {
-  background-color: #555;
-  color: white;
-  float: left;
+.Education h2 {
+  text-align: center;
+  font-family: "Gilroy-Semibold";
+  font-size: 24px;
+  color: #27226B;
+  margin: 20px 0px;
+}
+.Education .tab {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+}
+.Education .tab .tab-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 0px 20px;
+}
+.Education .tab .tab-button .tablink {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #0493A3;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  font-family: "Gilroy-Extrabold";
   font-size: 17px;
-  width: 25%;
+  width: 30%;
+  background-color: transparent;
 }
-.Education .tablink:hover {
+.Education .tab .tab-button .tablink #smile {
+  font-size: 22px;
+}
+.Education .tab .tab-button .tablink #down {
+  font-size: 22px;
+  color: red;
+  width: 20%;
+}
+.Education .tab .tab-button .tablink h3 {
+  margin: 10px 0px 10px;
+}
+.Education .tab .tab-button .tablink:hover {
   background-color: #777;
 }
-.Education .tabcontent {
-  color: white;
+.Education .tab .tab-content .tabcontent {
+  color: black;
   display: none;
   padding: 50px;
   text-align: center;
-}
-.Education #London {
-  background-color: red;
-}
-.Education #Paris {
-  background-color: green;
-}
-.Education #Tokyo {
-  background-color: blue;
-}
-.Education #Oslo {
-  background-color: orange;
 }/*# sourceMappingURL=style.css.map */

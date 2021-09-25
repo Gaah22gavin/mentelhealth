@@ -317,37 +317,79 @@ header{
 
 
 .Education{
-	
-	.tablink {
-		background-color: #555;
-		color: white;
-		float: left;
-		border: none;
-		outline: none;
-		cursor: pointer;
-		padding: 14px 16px;
-		font-size: 17px;
-		width: 25%;
-	  }
-	  
-	  /* Change background color of buttons on hover */
-	  .tablink:hover {
-		background-color: #777;
-	  }
-	  
-	  /* Set default styles for tab content */
-	  .tabcontent {
-		color: white;
-		display: none;
-		padding: 50px;
+	margin: 20px 0px;
+	padding: 20px 0px;
+	background-color: lightgray;
+	h2{
 		text-align: center;
-	  }
-	  
-	  /* Style each tab content individually */
-	  #London {background-color:red;}
-	  #Paris {background-color:green;}
-	  #Tokyo {background-color:blue;}
-	  #Oslo {background-color:orange;}
+		@include font-type(heading);
+		margin: 20px 0px;
+	}
+
+	.tab{
+		background-color: lightgreen;
+		display: flex;
+		flex-direction: column;
+
+
+		.tab-button{
+			display: flex;
+			justify-content: space-evenly;
+			margin: 0px 0px 20px;
+			.tablink {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				color: $color-main;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				font-family: $Extrabold;
+				font-size: 17px;
+				width: 30%;
+				background-color: transparent;
+
+				#smile{
+					font-size: 22px;
+				}
+
+				#down{
+					font-size: 22px;
+					color: red;		
+					width: 20%;		
+				}
+				h3{
+					margin: 10px 0px 10px;
+				}
+			  }
+			  
+			  .tablink:hover {
+				background-color: #777;
+			  }
+		}
+
+		.tab-content{
+
+			.tabcontent {
+				color: rgb(0, 0, 0);
+				display: none;
+				padding: 50px;
+				text-align: center;
+			}
+			
+		}
+
+		  
+		//   #London {
+		// 	  background-color:red;
+		// 	}
+		//   #Paris {background-color:green;}
+		//   #Tokyo {background-color:blue;}
+	}
+	
+
 
 }
 

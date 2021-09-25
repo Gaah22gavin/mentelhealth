@@ -67,25 +67,44 @@
         <h2>Education With MHASF</h2>
         <div class="tab">  
             <div class="tab-button">
-                <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London
-                    <i class="fas fa-smile"></i>
+                <button class="tablink" onclick="openCity('Training', this, 'red')" id="defaultOpen">
+                    <i class="fas fa-smile" id="smile"></i>
+                    <h3>
+                        Training Institute
+                    </h3>
+                    <i class="fas fa-angle-down" id="down"></i>
                 </button>
-                <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris
+
+
+                <button class="tablink" onclick="openCity('Paris', this, 'green')">
                     <i class="fas fa-dollar-sign"></i>
+                    <h3>PROPEL</h3>
+                    <i class="fas fa-angle-down" id="down"></i>
                 </button>
-                <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo
+                <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">
                     <i class="fas fa-trophy"></i>
+                    <h3>TAMHS Project</h3>
+                    <i class="fas fa-angle-down" id="down"></i>
                 </button>
             </div>
 
             <div class="tab-contant">
 
-                  <div id="London" class="tabcontent">
-                    <h1>London</h1>
-                    <p>London is the capital city of England.</p>
+                  <div id="Training" class="tabcontent">
+
+                    <p>
+                        MHASF's Training Institute provides evidence-based trainings 
+                        designed to enhance skills and knowledge for professional 
+                        development within a cooperative learning environment. 
+                        We deliver engaging, interactive trainings and workshops 
+                        discussing an array of mental health topics for people of 
+                        any profession and level of familiarity.
+                    </p>
+
+                    <a href="#">View Programs</a>
                   </div>
                   
-                  <div id="Paris" class="tabcontent">
+                  <!-- <div id="Paris" class="tabcontent">
                     <h1>Paris</h1>
                     <p>Paris is the capital of France.</p>
                   </div>
@@ -98,7 +117,7 @@
                   <div id="Oslo" class="tabcontent">
                     <h1>Oslo</h1>
                     <p>Oslo is the capital of Norway.</p>
-                  </div>
+                  </div> -->
             </div>
 
         </div>
