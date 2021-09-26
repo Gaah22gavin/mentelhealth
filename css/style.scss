@@ -1271,7 +1271,7 @@ footer{
 		.banner-text{
 			h1{
 				font-size: 66px;
-				margin: 0px 0px 40px;
+				margin: 0px 0px 70px;
 			}
 			p{
 				font-size: 18px;
@@ -1279,6 +1279,12 @@ footer{
 
 			a{
 				font-size: 23px;
+			}
+		}
+
+		.banner-img{
+			img{
+				width: 100%;
 			}
 		}
 	}
@@ -1302,7 +1308,6 @@ footer{
 
 	}
 	// end here
-
 
 	// Education
 	.Education{
@@ -1380,7 +1385,8 @@ footer{
 	.COVID{
 		margin: 100px 0px;
 		.ring-two{
-			top: -70px;
+			top: -48px;
+			width: 57%;
 		}
 		.COVID-con{
 			.COVID-text{
@@ -1485,7 +1491,6 @@ footer{
 
 	}
 	// end here
-
 
 	//footer
 	footer{

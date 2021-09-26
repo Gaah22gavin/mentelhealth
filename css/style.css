@@ -1135,13 +1135,16 @@ footer .foot ul li a {
   }
   .banner .banner-text h1 {
     font-size: 66px;
-    margin: 0px 0px 40px;
+    margin: 0px 0px 70px;
   }
   .banner .banner-text p {
     font-size: 18px;
   }
   .banner .banner-text a {
     font-size: 23px;
+  }
+  .banner .banner-img img {
+    width: 100%;
   }
 
   .about {
@@ -1224,7 +1227,8 @@ footer .foot ul li a {
     margin: 100px 0px;
   }
   .COVID .ring-two {
-    top: -70px;
+    top: -48px;
+    width: 57%;
   }
   .COVID .COVID-con .COVID-text h2 {
     font-size: 26px;
