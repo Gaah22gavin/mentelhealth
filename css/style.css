@@ -58,6 +58,7 @@ header {
   padding: 0px 20px;
   box-sizing: border-box;
   z-index: 5;
+  overflow-x: hidden;
 }
 header ul {
   display: none;
@@ -162,7 +163,8 @@ header.open img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 75px 0px 0px;
+  padding: 100px 0px 0px;
+  overflow-x: hidden;
 }
 .banner .right {
   top: -32px;
@@ -190,7 +192,7 @@ header.open img {
 .banner .banner-text p {
   font-family: "Gilroy-Semibold";
   font-size: 14px;
-  margin: 5px 5px 35px;
+  margin: 15px 5px 35px;
   line-height: 1.4;
 }
 .banner .banner-text a {
@@ -233,13 +235,13 @@ header.open img {
   text-align: center;
   font-family: "Gilroy-Semibold";
   font-size: 24px;
-  color: #27226B;
+  color: #0493A3;
 }
 .about .about-text p {
   font-family: "Gilroy-medium";
   font-size: 15px;
   line-height: 1.4;
-  color: #0493A3;
+  color: #27226B;
   margin: 20px 0px 30px;
 }
 .about .about-text a {
@@ -281,7 +283,7 @@ header.open img {
   text-align: center;
   font-family: "Gilroy-Semibold";
   font-size: 24px;
-  color: #27226B;
+  color: #0493A3;
   margin: 30px 0px;
 }
 .Education .tab {
@@ -309,6 +311,10 @@ header.open img {
 }
 .Education .tab .tab-button .tablink i {
   font-size: 22px;
+  display: block;
+}
+.Education .tab .tab-button .tablink .down {
+  transform: rotate(90deg);
 }
 .Education .tab .tab-button .tablink h3 {
   margin: 10px 0px;
@@ -336,7 +342,7 @@ header.open img {
   font-family: "Gilroy-medium";
   font-size: 15px;
   line-height: 1.4;
-  color: #0493A3;
+  color: #27226B;
   margin: 15px 0px 30px;
 }
 .Education .tab .tab-contant .tabcontent a {
@@ -365,13 +371,13 @@ header.open img {
   text-align: center;
   font-family: "Gilroy-Semibold";
   font-size: 24px;
-  color: #27226B;
+  color: #0493A3;
 }
 .Our-Warm-Line .Our-Warm-text p {
   font-family: "Gilroy-medium";
   font-size: 15px;
   line-height: 1.4;
-  color: #0493A3;
+  color: #27226B;
   margin: 20px 0px 30px;
 }
 .Our-Warm-Line .Our-Warm-text a {
@@ -407,6 +413,9 @@ header.open img {
   padding: 27px 0px;
   margin: 0px 0px 52px;
 }
+.COVID .ring-two {
+  display: none;
+}
 .COVID .COVID-con {
   background-color: #27226B;
   margin: 0px 10px;
@@ -424,14 +433,14 @@ header.open img {
   text-align: center;
   font-family: "Gilroy-Semibold";
   font-size: 24px;
-  color: #27226B;
+  color: #0493A3;
   color: white;
 }
 .COVID .COVID-con .COVID-text p {
   font-family: "Gilroy-medium";
   font-size: 15px;
   line-height: 1.4;
-  color: #0493A3;
+  color: #27226B;
   margin: 20px 0px 30px;
   color: white;
 }
@@ -503,14 +512,15 @@ header.open img {
 .Fundraising #fund-box .overlay h2 {
   font-family: "Gilroy-Semibold";
   font-size: 24px;
-  color: #27226B;
+  color: #0493A3;
   color: white;
+  text-decoration: underline;
 }
 .Fundraising #fund-box .overlay p {
   font-family: "Gilroy-medium";
   font-size: 15px;
   line-height: 1.4;
-  color: #0493A3;
+  color: #27226B;
   text-align: center;
   color: white;
   margin: 20px 0px;
@@ -558,14 +568,14 @@ header.open img {
 .Join-Our-Team .join-text .join-box h2 {
   font-family: "Gilroy-Semibold";
   font-size: 24px;
-  color: #27226B;
+  color: #0493A3;
   color: white;
 }
 .Join-Our-Team .join-text .join-box p {
   font-family: "Gilroy-medium";
   font-size: 15px;
   line-height: 1.4;
-  color: #0493A3;
+  color: #27226B;
   margin: 10px 0px 20px;
   color: white;
 }
@@ -591,24 +601,26 @@ header.open img {
   margin: 0px 10px;
 }
 .Join-Our-Team .Advocate .Adcovate-text {
+  outline: 3px solid white;
+  outline-offset: -15px;
   text-align: center;
   background-color: #27226B;
   border-radius: 10px;
   border: 2px solid white;
   margin: 10px 0px;
-  padding: 40px 30px;
+  padding: 50px 30px;
 }
 .Join-Our-Team .Advocate .Adcovate-text h2 {
   font-family: "Gilroy-Semibold";
   font-size: 24px;
-  color: #27226B;
+  color: #0493A3;
   color: white;
 }
 .Join-Our-Team .Advocate .Adcovate-text p {
   font-family: "Gilroy-medium";
   font-size: 15px;
   line-height: 1.4;
-  color: #0493A3;
+  color: #27226B;
   margin: 10px 0px 20px;
   color: white;
 }
@@ -630,6 +642,7 @@ header.open img {
 .Join-Our-Team .Advocate #advocate-img {
   padding: 0;
   background-color: transparent;
+  outline: none;
 }
 .Join-Our-Team .Advocate #Volunteer {
   background-color: #0493A3;
@@ -643,7 +656,7 @@ footer {
 footer h2 {
   font-family: "Gilroy-Semibold";
   font-size: 24px;
-  color: #27226B;
+  color: #0493A3;
   margin: 20px 0px 0px;
 }
 footer form {
@@ -705,7 +718,7 @@ footer .foot ul li a {
     height: 10vh;
   }
   header img {
-    width: 25%;
+    width: 20%;
   }
   header ul li a {
     font-size: 40px;
@@ -781,8 +794,8 @@ footer .foot ul li a {
     margin: 40px 0px;
   }
   .about .line {
-    z-index: 1;
-    height: 32%;
+    height: 53%;
+    top: -83px;
   }
   .about .about-text {
     width: 45%;
@@ -803,5 +816,284 @@ footer .foot ul li a {
   }
   .about .about-img {
     width: 40%;
+  }
+
+  .Education {
+    background-color: none;
+    background: url("../img/education.png");
+    background-size: cover;
+    padding: 50px 0px;
+  }
+  .Education h2 {
+    font-size: 25px;
+  }
+  .Education .tab {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Education .tab .tab-button {
+    width: 30%;
+    flex-direction: column;
+  }
+  .Education .tab .tab-button .tablink {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+  }
+  .Education .tab .tab-button .tablink i {
+    display: inline;
+  }
+  .Education .tab .tab-button .tablink h3 {
+    margin: 0;
+  }
+  .Education .tab .tab-button .tablink h3 i {
+    margin: 0 10px 0px 0px;
+  }
+  .Education .tab .tab-button .tablink:nth-child(2) h3 {
+    margin: 0;
+  }
+  .Education .tab .tab-button .tablink:nth-child(2) h3 i {
+    margin: 0 20px 0px 0px;
+  }
+  .Education .tab .tab-button .tablink .down {
+    transform: rotate(0deg);
+  }
+  .Education .tab .tab-contant {
+    width: 60%;
+  }
+  .Education .tab .tab-contant .tabcontent {
+    padding: 0px 0px 0px 40px;
+    border-top: none;
+    border-left: 4px solid #27226B;
+    text-align: left;
+  }
+  .Education .tab .tab-contant .tabcontent p {
+    font-size: 14px;
+  }
+  .Education .tab .tab-contant .tabcontent a {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+
+  .Our-Warm-Line {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Our-Warm-Line .Our-Warm-text {
+    width: 40%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .Our-Warm-Line .Our-Warm-text h2 {
+    text-align: left;
+    font-size: 25px;
+  }
+  .Our-Warm-Line .Our-Warm-text p {
+    font-size: 14px;
+    margin: 10px 0px 30px;
+  }
+  .Our-Warm-Line .Our-Warm-text a {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+  .Our-Warm-Line .Our-Warm-Line-img {
+    width: 45%;
+  }
+
+  .COVID {
+    position: relative;
+  }
+  .COVID .ring-two {
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: -15px;
+    width: 60%;
+    z-index: -1;
+  }
+  .COVID .COVID-con {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .COVID .COVID-con .COVID-img {
+    width: 45%;
+  }
+  .COVID .COVID-con .COVID-text {
+    margin: 0px;
+    padding: 0;
+    text-align: left;
+    width: 45%;
+  }
+  .COVID .COVID-con .COVID-text h2 {
+    font-size: 18px;
+    width: 70%;
+    text-align: left;
+  }
+  .COVID .COVID-con .COVID-text p {
+    font-size: 14px;
+    margin: 15px 0px 30px;
+  }
+  .COVID .COVID-con .COVID-text a {
+    padding: 0.7rem 1.5rem;
+    font-size: 18px;
+  }
+
+  .Fundraising .fund-img {
+    width: 27%;
+    height: 40vh;
+    box-sizing: border-box;
+    margin: 10px 0px 0px;
+  }
+  .Fundraising .fund-img .first {
+    height: 25vh;
+    width: 100%;
+  }
+  .Fundraising #fund-box {
+    width: 40%;
+  }
+  .Fundraising #fund-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .Fundraising #fund-box .overlay {
+    height: 100%;
+    justify-content: flex-end;
+    padding: 0px 0px 30px;
+    box-sizing: border-box;
+  }
+  .Fundraising #fund-box .overlay h2 {
+    font-size: 30px;
+  }
+  .Fundraising #fund-box .overlay p {
+    font-size: 14px;
+  }
+  .Fundraising #fund-box .overlay a {
+    font-size: 18px;
+  }
+  .Fundraising #third {
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Fundraising #third .third-img {
+    height: 80%;
+  }
+  .Fundraising #first {
+    margin: 45px 0px 0px;
+    height: 35vh;
+  }
+  .Fundraising #first .first {
+    height: 60%;
+  }
+
+  .Join-Our-Team .join-text {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  .Join-Our-Team .join-text .join-box {
+    width: 40%;
+  }
+  .Join-Our-Team .join-text .join-box h2 {
+    font-size: 25px;
+  }
+  .Join-Our-Team .join-text .join-box p {
+    font-size: 16px;
+    margin: 10px 0px 25px;
+  }
+  .Join-Our-Team .join-text .join-box a {
+    font-size: 18px;
+  }
+  .Join-Our-Team .join-text #box-two {
+    text-align: right;
+  }
+  .Join-Our-Team .join-text #box-two p {
+    margin: 10px 0px 35px;
+  }
+  .Join-Our-Team .Advocate {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Join-Our-Team .Advocate .Adcovate-text {
+    width: 27%;
+  }
+  .Join-Our-Team .Advocate .Adcovate-text img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+
+  footer {
+    background-color: transparent;
+    background: url(../img/footer.png);
+  }
+  footer h2 {
+    font-size: 28px;
+    margin: 20px 0px;
+  }
+  footer form {
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  footer form .email {
+    width: 50%;
+    font-size: 25px;
+    margin: 0 20px;
+  }
+  footer form .email::-moz-placeholder {
+    text-align: left;
+  }
+  footer form .email:-ms-input-placeholder {
+    text-align: left;
+  }
+  footer form .email::placeholder {
+    text-align: left;
+  }
+  footer form #button {
+    width: 20%;
+    padding: 17px 20px 17px 20px;
+    font-size: 22px;
+  }
+  footer .foot {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  footer .foot ul {
+    width: 30%;
+    text-align: left;
+    margin: 0px;
+  }
+  footer .foot ul h3 {
+    font-size: 25px;
+  }
+  footer .foot ul li {
+    margin: 10px 0px;
+  }
+  footer .foot ul li a {
+    font-size: 16px;
+  }
+  footer .foot ul .warm {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  header .menu {
+    display: none;
+  }
+  header ul {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
