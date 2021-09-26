@@ -1306,8 +1306,17 @@ footer{
 
 	// Education
 	.Education{
+		position: relative;
+		padding: 100px 0px;
 		h2{
 			font-size: 45px;
+		}
+		.educate{
+			display: block;
+			position: absolute;
+			bottom: -40px;
+			right: -162px;
+			width: 30%;
 		}
 		.tab{
 			padding: 40px 0px;
@@ -1480,6 +1489,27 @@ footer{
 
 	//footer
 	footer{
+		position: relative;
+		.mail{
+			position: absolute;
+			top: 64px;
+			left: 20px;
+			width: 8%;
+		}
+
+		.alian{
+			position: absolute;
+			bottom: 13px;
+			left: 73px;
+			width: 8%;		
+		}
+
+		.brian{
+			position: absolute;
+			right: 12px;
+			top: 66px;
+			width: 9%;
+		}
 		padding: 20px 0px;
 		h2{
 			font-size: 45px;

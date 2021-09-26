@@ -1158,8 +1158,19 @@ footer .foot ul li a {
     margin: 15px 0px 40px;
   }
 
+  .Education {
+    position: relative;
+    padding: 100px 0px;
+  }
   .Education h2 {
     font-size: 45px;
+  }
+  .Education .educate {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    right: -162px;
+    width: 30%;
   }
   .Education .tab {
     padding: 40px 0px;
@@ -1299,7 +1310,26 @@ footer .foot ul li a {
   }
 
   footer {
+    position: relative;
     padding: 20px 0px;
+  }
+  footer .mail {
+    position: absolute;
+    top: 64px;
+    left: 20px;
+    width: 8%;
+  }
+  footer .alian {
+    position: absolute;
+    bottom: 13px;
+    left: 73px;
+    width: 8%;
+  }
+  footer .brian {
+    position: absolute;
+    right: 12px;
+    top: 66px;
+    width: 9%;
   }
   footer h2 {
     font-size: 45px;
