@@ -738,6 +738,16 @@ footer .foot ul li a {
   header img {
     width: 20%;
   }
+  header .right {
+    top: -32px;
+    left: -96px;
+    width: 62%;
+    position: absolute;
+    z-index: -1;
+  }
+  header .left {
+    z-index: -1;
+  }
   header ul li a {
     font-size: 40px;
   }
@@ -766,15 +776,6 @@ footer .foot ul li a {
     justify-content: space-evenly;
     padding: 90px 0px 0px;
     overflow: unset;
-  }
-  .banner .right {
-    z-index: -1;
-    top: -33px;
-    left: -71px;
-    width: 60%;
-  }
-  .banner .left {
-    z-index: -1;
   }
   .banner .banner-text {
     width: 30%;
@@ -1134,6 +1135,16 @@ footer .foot ul li a {
   }
   header img {
     width: 13%;
+  }
+  header .right {
+    width: 51%;
+    top: -62px;
+    left: -29px;
+  }
+  header .left {
+    width: 50%;
+    top: -51px;
+    right: -32px;
   }
   header ul {
     display: flex;

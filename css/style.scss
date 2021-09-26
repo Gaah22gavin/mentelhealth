@@ -101,7 +101,6 @@ header{
 	height: 12vh;
 	padding: 0px 20px;
 	box-sizing: border-box;
-	// overflow: hidden;
 	z-index: 5;
 	.right{
 		top: -32px;
@@ -815,11 +814,25 @@ footer{
 
 //============== ipad ==================
 @media (min-width: 768px){
+	// *{
+	// 	overflow-x: hidden;
+	// }
 	// header
 	header{
 		height: 10vh;
 		img{
 			width: 20%;
+		}
+
+		.right{
+			top: -32px;
+			left: -96px;
+			width: 62%;
+			position: absolute;
+			z-index: -1;
+		}
+		.left{
+			z-index: -1;
 		}
 
 		ul{
@@ -862,15 +875,6 @@ footer{
 		justify-content: space-evenly;
 		padding: 90px 0px 0px;
 		overflow: unset;
-		.right{
-			z-index: -1;
-			top: -33px;
-			left: -71px;
-			width: 60%;
-		}
-		.left{
-			z-index: -1;
-		}
 
 		.banner-text{
 			width: 30%;
@@ -1279,6 +1283,19 @@ footer{
 
 		img{
 			width: 13%;
+		}
+
+		.right{
+			width: 51%;
+			top: -62px;
+			left: -29px;
+		}
+
+		.left{
+			width: 50%;
+			top: -51px;
+			right: -32px;
+
 		}
 
 
