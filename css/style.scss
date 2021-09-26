@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.4;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -100,8 +101,22 @@ header{
 	height: 12vh;
 	padding: 0px 20px;
 	box-sizing: border-box;
+	// overflow: hidden;
 	z-index: 5;
-	overflow-x: hidden;
+	.right{
+		top: -32px;
+		left: -2px;
+		width: 52%;
+		position: absolute;
+		z-index: -1;
+	}
+	.left{
+		z-index: -1;
+		top: -7px;
+		right: -3px;
+		width: 46%;
+		position: absolute;
+	}
 
 	ul{
 			
@@ -222,21 +237,23 @@ header{
 	flex-direction: column;
 	justify-content: center;
 	padding: 100px 0px 0px;
-	overflow-x: hidden;
-	.right{
-		top: -32px;
-		left: -2px;
-		width: 52%;
-		position: absolute;
-		z-index: 0;
-	}
-	.left{
-		z-index: 0;
-		top: -7px;
-		right: -3px;
-		width: 46%;
-		position: absolute;
-	}
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	// .right{
+	// 	top: -32px;
+	// 	left: -2px;
+	// 	width: 52%;
+	// 	position: absolute;
+	// 	z-index: 0;
+	// }
+	// .left{
+	// 	z-index: 0;
+	// 	top: -7px;
+	// 	right: -3px;
+	// 	width: 46%;
+	// 	position: absolute;
+	// }
 
 	.banner-text{
 		text-align: center;
@@ -335,6 +352,7 @@ header{
 	padding: 20px 0px 30px;
 	background: url(../img/education.png);
 	background-position: center;
+	overflow: hidden;
 	.educate{
 		display: none;
 	}
@@ -792,6 +810,7 @@ footer{
 	
 }
 // end here
+
 
 
 //============== ipad ==================
@@ -1287,6 +1306,7 @@ footer{
 	// banner
 	.banner{
 		align-items: flex-start;
+		padding: 115px 0px 0px;
 		.right{
 			width: 51%;
 			top: -62px;
@@ -1315,8 +1335,9 @@ footer{
 		}
 
 		.banner-img{
+			width: 60%;
 			img{
-				width: 100%;
+				width: 98%;
 			}
 		}
 	}
@@ -1358,6 +1379,7 @@ footer{
 		.tab{
 			padding: 40px 0px;
 			.tab-button{
+				margin: 0;
 				justify-content: center;
 				padding: 0px 20px;
 				i{
@@ -1365,7 +1387,7 @@ footer{
 				}
 				.tablink{
 					font-size: 22px;
-					margin: 0px 0px 20px;
+					margin: 0px 0px 25px;
 
 					&:hover{
 						color: $color-main;
@@ -1616,7 +1638,5 @@ footer{
 	// end here
 
 }
-
-
 // ==============end here================
 
