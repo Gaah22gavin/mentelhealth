@@ -877,7 +877,7 @@ footer{
 		margin: 40px 0px;
 		.line{
    		    height: 53%;
-			   top: -83px;
+			top: -83px;
 		}
 		
 		.about-text{
@@ -1217,15 +1217,189 @@ footer{
 
 // ============laptop===================
 @media (min-width: 1200px) {
+	// header
 	header{
+		align-items: center;
+		height: 13vh;
+		padding: 0px 30px;
 		.menu{
 			display: none;
 		}
 
+		img{
+			width: 13%;
+		}
+
+
 		ul{
 			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			height: 100%;
+			width: 45%;
+			li{
+				width: 24%;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				a{
+					font-size: 18px;
+				}
+			}
 		}
 	}
+	// end here
+
+	// banner
+	.banner{
+		align-items: flex-start;
+		.right{
+			width: 51%;
+			top: -62px;
+			left: -29px;
+		}
+
+		.left{
+			width: 50%;
+			top: -51px;
+			right: -32px;
+
+		}
+
+		.banner-text{
+			h1{
+				font-size: 66px;
+				margin: 0px 0px 40px;
+			}
+			p{
+				font-size: 18px;
+			}
+
+			a{
+				font-size: 23px;
+			}
+		}
+	}
+	// end here
+
+	// about
+	.about{
+		padding: 100px 0px;
+		.about-text{
+			h2{
+				font-size: 45px;
+			}
+			a{
+				font-size: 23px;
+			}
+			p{
+				font-size: 21px;
+				margin: 15px 0px 40px;
+			}
+		}
+
+	}
+	// end here
+
+
+	// Education
+	.Education{
+		h2{
+			font-size: 45px;
+		}
+		.tab{
+			padding: 40px 0px;
+			.tab-button{
+				justify-content: center;
+				padding: 0px 20px;
+				i{
+					font-size: 22px;
+				}
+				.tablink{
+					font-size: 22px;
+					margin: 0px 0px 20px;
+
+					&:hover{
+						color: $color-main;
+					}
+				}
+			}
+
+			.tab-contant{
+				padding: 20px 0px;
+				border-left: 4px solid $bg_color;
+				.tabcontent{
+					border-left: transparent;
+					p{
+						font-size: 22px;
+					}
+					a{
+						font-size: 23px;
+					}
+				}
+			}
+		}
+
+
+	}
+	// end here
+
+	// .Our-Warm-Line
+	.Our-Warm-Line{
+		padding: 40px 0px 60px;
+		margin: 40px 0px;
+		.Our-Warm-text{
+			h2{
+				font-size: 45px;
+			}
+			a{
+				font-size: 24px;
+				padding: 0.5rem 6rem;
+				border-radius: 0px;
+			}
+			p{
+				font-size: 20px;
+				margin: 15px 0px 40px;
+			}
+		}
+	}
+	// end here
+
+	// COVID
+	.COVID{
+		margin: 100px 0px;
+		.ring-two{
+			top: -70px;
+		}
+		.COVID-con{
+			.COVID-text{
+				h2{
+					font-size: 26px;
+					width: 65%
+				}
+				a{
+					font-size: 24px;
+					padding: 0.5rem 4rem;
+					border-radius: 0px;
+				}
+				p{
+					font-size: 20px;
+					margin: 15px 0px 40px;
+				}
+			}
+		}
+	}
+	// end here
+
+	//Fundraising
+	.Fundraising{
+
+	}
+	// end here	
 }
+
+
 // ==============end here================
 
