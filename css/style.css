@@ -1228,4 +1228,104 @@ footer .foot ul li a {
     font-size: 20px;
     margin: 15px 0px 40px;
   }
+
+  .Fundraising {
+    margin: 100px 0px;
+  }
+  .Fundraising .fund-img {
+    height: unset;
+  }
+  .Fundraising .fund-img .first {
+    height: 100%;
+  }
+  .Fundraising #fund-box img {
+    -o-object-fit: fiil;
+       object-fit: fiil;
+    border-radius: 10px;
+  }
+  .Fundraising #fund-box .overlay {
+    padding: 0px 15px 30px;
+  }
+  .Fundraising #fund-box .overlay h2 {
+    font-size: 45px;
+  }
+  .Fundraising #fund-box .overlay p {
+    font-size: 23px;
+  }
+  .Fundraising #fund-box .overlay a {
+    font-size: 23px;
+  }
+  .Fundraising #third {
+    height: unset;
+  }
+  .Fundraising #first {
+    margin: 55px 0px 0px;
+    height: unset;
+  }
+  .Fundraising #first .first {
+    height: 55%;
+    width: 100%;
+  }
+
+  .Join-Our-Team {
+    background-color: #686806;
+    margin: 40px 30px;
+  }
+  .Join-Our-Team .join-text {
+    background-color: #5500ff;
+  }
+  .Join-Our-Team .Advocate {
+    margin: 20px 0px;
+    align-items: center;
+  }
+  .Join-Our-Team .Advocate .Adcovate-text {
+    border: none;
+    width: 28%;
+    padding: 50px 20px;
+  }
+  .Join-Our-Team .Advocate .Adcovate-text p {
+    font-size: 20px;
+    margin: 20px 0px 40px;
+  }
+  .Join-Our-Team .Advocate .Adcovate-text h2 {
+    font-size: 34px;
+  }
+  .Join-Our-Team .Advocate .Adcovate-text a {
+    font-size: 23px;
+  }
+  .Join-Our-Team .Advocate #advocate-img {
+    width: 30%;
+    background-color: yellow;
+  }
+
+  footer {
+    padding: 20px 0px;
+  }
+  footer h2 {
+    font-size: 45px;
+    margin: 50px 0px 20px;
+  }
+  footer form .email {
+    width: 40%;
+    padding: 14px 20px 14px 20px;
+    font-size: 19px;
+  }
+  footer form #button {
+    width: 13%;
+    padding: 10px 20px 10px 20px;
+    font-size: 26px;
+  }
+  footer .foot {
+    justify-content: flex-end;
+    margin: 30px 0px 0px;
+  }
+  footer .foot ul {
+    width: 26%;
+  }
+  footer .foot ul h2 {
+    font-size: 22px;
+  }
+  footer .foot ul li a {
+    font-size: 22px;
+  }
 }/*# sourceMappingURL=style.css.map */
