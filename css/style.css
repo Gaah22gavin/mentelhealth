@@ -1283,11 +1283,35 @@ footer .foot ul li a {
   }
 
   .Join-Our-Team {
-    background-color: #686806;
     margin: 40px 30px;
   }
   .Join-Our-Team .join-text {
-    background-color: #5500ff;
+    background: url(../img/path-one.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+  }
+  .Join-Our-Team .join-text .join-box {
+    background-color: transparent;
+    width: 60%;
+  }
+  .Join-Our-Team .join-text .join-box h2 {
+    font-size: 22px;
+  }
+  .Join-Our-Team .join-text .join-box p {
+    font-size: 20px;
+    width: 60%;
+  }
+  .Join-Our-Team .join-text .join-box a {
+    font-size: 23px;
+  }
+  .Join-Our-Team .join-text #box-two {
+    background-color: transparent;
+    width: 35%;
+  }
+  .Join-Our-Team .join-text #box-two p {
+    width: 100%;
   }
   .Join-Our-Team .Advocate {
     margin: 20px 0px;

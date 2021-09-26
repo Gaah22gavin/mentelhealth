@@ -1455,10 +1455,38 @@ footer{
 
 	// .Join-Our-Team
 	.Join-Our-Team{
-		background-color: rgb(104, 104, 6);
 		margin: 40px 30px;
+
 		.join-text{
-			background-color: rgb(85, 0, 255);
+			background: url(../img/path-one.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			box-sizing: border-box;
+			.join-box{
+				background-color: transparent;
+				width: 60%;
+				h2{
+					font-size: 22px;
+				}
+
+				p{
+					font-size: 20px;
+					width: 60%;
+				}
+
+				a{
+					font-size: 23px;
+				}
+			}
+			#box-two{
+				background-color: transparent;
+				width: 35%;
+				p{
+					width: 100%;
+				}
+			}
+
 		}
 
 		.Advocate{
