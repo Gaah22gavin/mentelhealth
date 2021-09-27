@@ -1,9 +1,12 @@
 $(document).on('ready', e=>{
-    $('.menu').on('click', e=>{
-        $('.menu').toggleClass("line-open")
-        $('header').toggleClass('open');
-    });
+  $('.line').on('click', e=>{
+      $('.menu').toggleClass("line-open")
+      $('header').toggleClass('open');
+  });
 })
+
+
+;
 
 // ===================================================
 
@@ -27,3 +30,4 @@ function openCity(cityName, elmnt, color) {
 document.getElementById("defaultOpen").click();
 
 // ====================================================
+

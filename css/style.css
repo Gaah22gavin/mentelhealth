@@ -58,21 +58,7 @@ header {
   height: 12vh;
   padding: 0px 20px;
   box-sizing: border-box;
-  z-index: 5;
-}
-header .right {
-  top: -32px;
-  left: -2px;
-  width: 52%;
-  position: absolute;
-  z-index: -1;
-}
-header .left {
-  z-index: -1;
-  top: -7px;
-  right: -3px;
-  width: 46%;
-  position: absolute;
+  z-index: 6;
 }
 header ul {
   display: none;
@@ -153,7 +139,7 @@ header .menu.line-open .line::after {
 header.open {
   height: 100vh;
   width: 100%;
-  background-color: #313131;
+  background-color: #0493A3;
   padding: 0;
   margin: 0;
   z-index: 5;
@@ -172,6 +158,12 @@ header.open img {
   top: 3%;
   left: 5%;
 }
+header.open .right {
+  display: none;
+}
+header.open .left {
+  display: none;
+}
 
 .banner {
   display: flex;
@@ -180,7 +172,21 @@ header.open img {
   padding: 100px 0px 0px;
   position: relative;
   overflow: hidden;
-  z-index: 5;
+  z-index: 4;
+}
+.banner .right {
+  top: -32px;
+  left: -2px;
+  width: 52%;
+  position: absolute;
+  z-index: -1;
+}
+.banner .left {
+  z-index: -1;
+  top: -7px;
+  right: -3px;
+  width: 46%;
+  position: absolute;
 }
 .banner .banner-text {
   text-align: center;
@@ -734,19 +740,10 @@ footer .foot ul li a {
 @media (min-width: 768px) {
   header {
     height: 10vh;
+    z-index: 6;
   }
   header img {
     width: 20%;
-  }
-  header .right {
-    top: -32px;
-    left: -96px;
-    width: 62%;
-    position: absolute;
-    z-index: -1;
-  }
-  header .left {
-    z-index: -1;
   }
   header ul li a {
     font-size: 40px;
@@ -774,8 +771,21 @@ footer .foot ul li a {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 90px 0px 0px;
-    overflow: unset;
+    padding: 115px 0px 0px;
+  }
+  .banner .right {
+    top: -32px;
+    left: -2px;
+    width: 52%;
+    position: absolute;
+    z-index: -1;
+  }
+  .banner .left {
+    z-index: -1;
+    top: -7px;
+    right: -3px;
+    width: 46%;
+    position: absolute;
   }
   .banner .banner-text {
     width: 30%;
@@ -786,7 +796,7 @@ footer .foot ul li a {
   .banner .banner-text h1 {
     color: white;
     margin: 0px 0px 30px;
-    font-size: 42px;
+    font-size: 26px;
   }
   .banner .banner-text p {
     margin: 0px 0px 35px;

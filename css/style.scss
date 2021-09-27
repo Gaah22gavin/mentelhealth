@@ -91,7 +91,7 @@ $color-main: #0493A3;
 
 // =========mixins==============
 
-// header
+//header
 header{
 	display:flex;
 	justify-content: space-between;
@@ -101,21 +101,8 @@ header{
 	height: 12vh;
 	padding: 0px 20px;
 	box-sizing: border-box;
-	z-index: 5;
-	.right{
-		top: -32px;
-		left: -2px;
-		width: 52%;
-		position: absolute;
-		z-index: -1;
-	}
-	.left{
-		z-index: -1;
-		top: -7px;
-		right: -3px;
-		width: 46%;
-		position: absolute;
-	}
+	z-index: 6;
+
 
 	ul{
 			
@@ -158,7 +145,7 @@ header{
 		cursor: pointer;
 		position: relative;
 		.line{
-			background-color: white;
+			background-color: rgb(255, 255, 255);
 			width: 100%;
 			height: 6px;
 			border-radius: 5px;
@@ -206,7 +193,7 @@ header{
 	&.open{
 		height: 100vh;
 		width: 100%;
-		background-color: rgb(49, 49, 49);
+		background-color: $color-main;
 		padding: 0;
 		margin: 0;
 		z-index: 5;
@@ -226,6 +213,13 @@ header{
 			left: 5%;
 		}
 
+		.right{
+			display: none;
+		}
+		.left{
+			display: none;
+		}
+
 	}
 }
 // end here
@@ -238,21 +232,21 @@ header{
 	padding: 100px 0px 0px;
 	position: relative;
 	overflow: hidden;
-	z-index: 5;
-	// .right{
-	// 	top: -32px;
-	// 	left: -2px;
-	// 	width: 52%;
-	// 	position: absolute;
-	// 	z-index: 0;
-	// }
-	// .left{
-	// 	z-index: 0;
-	// 	top: -7px;
-	// 	right: -3px;
-	// 	width: 46%;
-	// 	position: absolute;
-	// }
+	z-index: 4;
+	.right{
+		top: -32px;
+		left: -2px;
+		width: 52%;
+		position: absolute;
+		z-index: -1;
+	}
+	.left{
+		z-index: -1;
+		top: -7px;
+		right: -3px;
+		width: 46%;
+		position: absolute;
+	}
 
 	.banner-text{
 		text-align: center;
@@ -820,20 +814,11 @@ footer{
 	// header
 	header{
 		height: 10vh;
+		z-index: 6;
 		img{
 			width: 20%;
 		}
 
-		.right{
-			top: -32px;
-			left: -96px;
-			width: 62%;
-			position: absolute;
-			z-index: -1;
-		}
-		.left{
-			z-index: -1;
-		}
 
 		ul{
 			li{
@@ -873,8 +858,21 @@ footer{
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-evenly;
-		padding: 90px 0px 0px;
-		overflow: unset;
+		padding: 115px 0px 0px;
+		.right{
+			top: -32px;
+			left: -2px;
+			width: 52%;
+			position: absolute;
+			z-index: -1;
+		}
+		.left{
+			z-index: -1;
+			top: -7px;
+			right: -3px;
+			width: 46%;
+			position: absolute;
+		}
 
 		.banner-text{
 			width: 30%;
@@ -884,7 +882,7 @@ footer{
 			h1{
 				color: white;
 				margin: 0px 0px 30px;
-				font-size: 42px;
+				font-size: 26px;
 			}
 			p{
 				margin: 0px 0px 35px;
