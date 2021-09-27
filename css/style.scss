@@ -51,7 +51,7 @@ table {
 $bold:"Gilroy-Bold";
 $regular:"Gilroy-Regular";
 $light: "Gilroy-light";
-$thin: "Panton-thin";
+$thin: "Gilroy-thin";
 $medium: "Gilroy-medium";
 $semibold: "Gilroy-Semibold";
 $Extrabold: "Gilroy-Extrabold";
@@ -120,7 +120,7 @@ header{
 				font-size: 22px;
 				color: white;
 				text-decoration: none;
-				font-family:$light;
+				font-family:$thin;
 
 			}
 		}
