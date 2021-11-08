@@ -732,6 +732,7 @@ footer .foot ul li {
   margin: 15px 0px;
 }
 footer .foot ul li a {
+  color: black;
   text-decoration: none;
   font-family: "Gilroy-Regular";
   font-size: 18px;
